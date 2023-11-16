@@ -1,0 +1,38 @@
+:root {
+  --navWidth: 7.6%; /* 7.6% of horizontality of window */
+  --navHeight: 100vh; /* Extends to bottom of window*/
+  --headerBuffer: 10vh;
+}
+
+.Navbar {
+  box-sizing: border-box;
+  padding-top: calc(var(--headerBuffer) + 10px);
+  z-index: 1;
+  margin-left: -10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 7.6%;
+  justify-content: space-between;
+
+  border-radius: 10px;
+
+  padding-bottom: 10px;
+  box-shadow: 0px 4px 4px 10px #b3b3b3;
+}
+
+.Navbar img {
+  width: 7.5vmin;
+  cursor: pointer; /* Changes cursor to the clicky one */
+}
+
+.Navbar img:hover {
+  filter: brightness(90%);
+  cursor: pointer; /* Changes cursor to the clicky one */
+}
+
+.Navbar img:active {
+  filter: brightness(85%);
+  cursor: pointer; /* Changes cursor to the clicky one */
+}

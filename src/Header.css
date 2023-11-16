@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Days+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+.Header {
+  z-index: 10; /* Renders on top of everything */
+  width: 100vw; /* Take up whole width of screen */
+  height: 10vh; /* Take up 10% of the height of the screen */
+
+  display: flex;
+  flex-direction: row;
+  background-color: #0f3887;
+  color: white; /* Coven Text Color */
+  justify-content: center;
+
+  align-items: center;
+}
+.CovenHeader {
+  align-self: end; /* Vertical Bottom */
+  font-family: "Days One", sans-serif;
+  font-size: 250%;
+}
+.SignOut {
+  /* Positioning */
+  align-self: center; /* Vertical Center */
+  position: absolute;
+  right: 0; /* Keeps it from being right up against the side */
+  margin-right: 2.5rem;
+
+  /* Aesthetics */
+  background-color: #ffffff; /* Base Button Background Color */
+  color: #000000; /* Button Text Color */
+  border: none; /* Get rid of the ugly basic html button border*/
+  padding: 7px 40px; /* dimensions of the shape */
+  border-radius: 40px; /* Adjust the border-radius for rounded corners */
+  cursor: pointer; /* Changes cursor to the clicky one */
+  font-size: 16px;
+  font-weight: 600; /* Thickness of text */
+  font-family: "Outfit", sans-serif;
+  letter-spacing: 0.5px; /* Makes the letters slightly tighter together */
+}
+.Profile {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 0.3rem;
+  align-self: center;
+  height: 7vh;
+  left: 0;
+}
+
+img:hover {
+  filter: brightness(90%);
+  cursor: pointer; /* Changes cursor to the clicky one */
+}
+
+img:active {
+  filter: brightness(85%);
+  cursor: pointer; /* Changes cursor to the clicky one */
+}
